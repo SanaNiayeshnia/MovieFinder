@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "//sananiayeshnia.github.io/MovieFinder/static/css/main.c04e3958.css",
+    "main.js": "//sananiayeshnia.github.io/MovieFinder/static/js/main.4387f2d6.js",
+    "index.html": "//sananiayeshnia.github.io/MovieFinder/index.html",
+    "main.c04e3958.css.map": "//sananiayeshnia.github.io/MovieFinder/static/css/main.c04e3958.css.map",
+    "main.4387f2d6.js.map": "//sananiayeshnia.github.io/MovieFinder/static/js/main.4387f2d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c04e3958.css",
+    "static/js/main.4387f2d6.js"
+  ]
+}

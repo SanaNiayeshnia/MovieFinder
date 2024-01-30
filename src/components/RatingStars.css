@@ -1,0 +1,5 @@
+.rating-stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.1rem;
+}

@@ -1,0 +1,19 @@
+.watchedmovies-info {
+  background-color: rgba(255, 255, 255, 0.064);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.311);
+}
+.watchedmovies-info p {
+  color: white;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.box-title {
+  font-weight: 600;
+}
+.watched-result {
+  display: flex;
+  margin-top: 0.5rem;
+  gap: 1rem;
+}

@@ -1,0 +1,19 @@
+.movielist {
+  list-style: none;
+  padding: 0.5rem;
+  margin-top: 0;
+  overflow: auto;
+  max-height: 500px;
+}
+
+.movielist::-webkit-scrollbar {
+  appearance: none;
+  width: 6px;
+}
+.movielist::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.566);
+  border-radius: 1rem;
+}
+.movielist::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.747);
+}

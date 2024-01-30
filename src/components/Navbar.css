@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #7c4dff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 5px 5px 0 black;
+}
+
+.navbar p {
+  margin: 0;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: white;
+}
+.navbar .search-box {
+  display: flex;
+  align-items: center;
+}
+.navbar .search-box i {
+  padding: 0.5rem;
+  color: rgb(237, 237, 237);
+  cursor: pointer;
+  border-radius: 0 0.25rem 0.25rem 0;
+  background-color: rgba(255, 255, 255, 0.231);
+  transition: 0.3s all;
+  font-size: 1.15rem;
+}
+.navbar .search-box i:hover {
+  color: white;
+}
+.navbar .search-box input {
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+  background-color: rgba(255, 255, 255, 0.231);
+}
+.navbar .search-box input::placeholder {
+  color: rgb(237, 237, 237);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+.navbar .search-box input:focus {
+  outline: none;
+}
+
+.navbar .result-count {
+  color: white;
+}

@@ -1,0 +1,23 @@
+.box {
+  background-color: #2a2e30;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  min-height: 400px;
+
+  box-shadow: 0 5px 5px 0 black;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.showbox-btn {
+  border-radius: 2rem;
+  background-color: #212121;
+  padding: 0.25rem 0.35rem;
+  color: white;
+  font-size: 0.75rem;
+  position: absolute;
+  right: 1.25rem;
+  top: 1rem;
+  cursor: pointer;
+  z-index: 3;
+}

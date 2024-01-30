@@ -1,0 +1,37 @@
+.movie {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.116);
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.movie:hover .movie-pic {
+  transform: scale(1.2);
+}
+.movie p {
+  color: white;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.movie .movie-info {
+  text-align: left;
+}
+.movie-info .movie-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.movie-info .movie-pub-year {
+  margin-left: 0.25rem;
+}
+.movie-pic {
+  max-width: 35px;
+  border-radius: 0.25rem;
+  transition: all 0.3s;
+}
+
+.movie.selected {
+  background-color: #21212184;
+}

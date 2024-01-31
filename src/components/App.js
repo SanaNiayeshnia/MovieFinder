@@ -7,18 +7,19 @@ import Error from "./Error";
 import Watchedmovielist from "./watchedmovielist";
 import WatchedMoviesInfo from "./Watchedmoviesinfo";
 import MovieDetails from "./MovieDetails";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 function App() {
   const [movieData, setMovieData] = useState([]);
-  const [watchedMovieData, setWatchedMovieData] = useState(() =>
-    JSON.parse(localStorage.getItem("watchedList"))
+  const [watchedMovieData, setWatchedMovieData] = useState(
+    () => JSON.parse(localStorage.getItem("watchedList")) || []
   );
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [query, setQuery] = useState("");
   const [totalResults, setTotalResults] = useState(0);
   const [selectedId, setSelectedId] = useState(null);
+  const searchInputEl = useRef(null);
 
   const key = 56290255;
 
@@ -61,9 +62,18 @@ function App() {
     localStorage.setItem("watchedList", JSON.stringify(watchedMovieData));
   }, [watchedMovieData]);
 
+  useEffect(() => {
+    searchInputEl.current.focus();
+  }, []);
+
   return (
     <div className="App">
-      <Navbar setQuery={setQuery} query={query} totalResults={totalResults} />
+      <Navbar
+        setQuery={setQuery}
+        query={query}
+        totalResults={totalResults}
+        searchInputEl={searchInputEl}
+      />
       <div className="lists-container">
         <Box width={"300px"}>
           {isLoading ? (

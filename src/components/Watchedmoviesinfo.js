@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Watchedmoviesinfo.css";
-export default function WatchedMoviesInfo({ watchedMovieData }) {
+export default function WatchedMoviesInfo({ watchedMovieData = [] }) {
   const watchedCount = watchedMovieData.length;
   const avgImdbRating = (
     watchedMovieData.reduce((sum, movie) => {

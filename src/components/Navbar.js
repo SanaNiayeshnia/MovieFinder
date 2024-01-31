@@ -1,6 +1,10 @@
-import { useState } from "react";
 import "./Navbar.css";
-export default function Navbar({ query, setQuery, totalResults }) {
+export default function Navbar({
+  query,
+  setQuery,
+  totalResults,
+  searchInputEl,
+}) {
   return (
     <div className="navbar">
       <p className="logo">
@@ -12,6 +16,7 @@ export default function Navbar({ query, setQuery, totalResults }) {
           onChange={(e) => setQuery(e.target.value)}
           type="text"
           placeholder="serach..."
+          ref={searchInputEl}
         />
         <i className="fa-solid fa-search" onClick={() => setQuery(query)}></i>
       </div>
